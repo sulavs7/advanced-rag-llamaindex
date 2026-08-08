@@ -1,0 +1,2 @@
+EMBED_MODEL_NAME = "BAAI/bge-small-en-v1.5"
+MAX_TOKEN = 428
