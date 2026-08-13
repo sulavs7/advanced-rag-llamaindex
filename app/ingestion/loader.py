@@ -42,7 +42,7 @@ def load_documents(file_path: Path) -> list[Document]:
 if __name__ == "__main__":
     file_path = Path("uploaded_docs/2408.09869v5.pdf")
 
-    documents = load_document(file_path)
+    documents = load_documents(file_path)
 
     print(type(documents))
     print(documents)
