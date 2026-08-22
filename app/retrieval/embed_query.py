@@ -1,3 +1,4 @@
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 def embed_query(embed_model : HuggingFaceEmbedding , query:str)->list[float]:
     """

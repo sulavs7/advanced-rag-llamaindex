@@ -18,9 +18,9 @@ def rerank(query:str,candidates:list[dict],reranker:CrossEncoder,top_k:int=5 )->
     for candidate, score in zip(candidates, scores):
         candidate["rerank_score"] = score
     
-    ranked_candidates = sorted(candidates, key=lambda rerank_score: candidates["rerank_score"],reverse=True)
+    ranked_candidates = sorted(candidates, key=lambda c: c["rerank_score"], reverse=True)
 
-    return ranked_candidate[:top_k]
+    return ranked_candidates[:top_k]
 
 
 
