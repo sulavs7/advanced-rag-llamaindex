@@ -6,3 +6,5 @@ def embed_query(embed_model : HuggingFaceEmbedding , query:str)->list[float]:
     """
     return embed_model.get_query_embedding(query)
 
+
+
